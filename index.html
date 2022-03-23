@@ -1,0 +1,611 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="tripper.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+  <title>Document</title>
+</head>
+
+<body>
+  <!-- NAVBAR -->
+  <div class="container">
+    <nav class="navbar navbar-expand-lg navbar-light bg">
+      <div class="container-fluid">
+        <a class="navbar-brand w-25" href="#"><img height="40" src="/trippyJPG.JPG" alt=""></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Popular Destinations</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Gallery</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Upcoming rides</a>
+            </li>
+            <!-- <li class="nav-item">
+                    <a class="nav-link" href="#">Link</a>
+                  </li> -->
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                Select state
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="https://www.karnatakatourism.org/biking-in-karnataka/">Karnataka</a></li>
+                <li><a class="dropdown-item" href="https://www.grandebayresort.in/blog/7-best-bike-riding-routes-in-tamil-nadu/">TamilNadu</a></li>
+                <li><a class="dropdown-item" href="https://irisholidays.com/keralatourism/bike-tour-destinations-in-kerala/">Kerala</a></li>
+                <li><a class="dropdown-item" href="https://www.tripadvisor.in/Attractions-g297617-Activities-c61-t214-Himachal_Pradesh.html">Himachal pradesh</a></li>
+                <li><a class="dropdown-item" href="https://traveltriangle.com/blog/leh-ladakh-bike-trip/">Ladakh</a></li>
+                <li><a class="dropdown-item" href="https://everythingcandid.com/2015/08/24/go-chhattisgarh-5-surprises-5-days-roadtrip-chhattisgarh/">Chhattisgarh</a></li>
+                <li><a class="dropdown-item" href="https://www.mygoa365.com/places-to-visit-in-goa-by-bike/">Goa</a></li>
+                <li><a class="dropdown-item" href="https://odishatourism.gov.in/content/tourism/en/blog-details.html?url=bike-trip-to-northern-odisha-by-xbhp-bbsr">Odisha</a></li>
+                <li><a class="dropdown-item" href="https://www.punjabonline.in/about/tourism/best-biking-destinations-in-punjab">Punjab</a></li>
+                <li><a class="dropdown-item" href="https://www.thrillophilia.com/rajasthan-bike-tour">Rajasthan</a></li>
+                <li><a class="dropdown-item" href="https://www.holidify.com/collections/road-trips-from-kolkata">West Bengal</a></li>
+              </ul>
+            </li>
+            <li>
+              <form class="d-flex">
+                <input class="form-control me-2" type="search" placeholder="Enter destination" aria-label="Search">
+                <button class="btn btn-outline-danger" type="submit">Search</button>
+              </form>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </div>
+
+
+  <div style="height: 600px; overflow: hidden;" class="vid">
+    <video autoplay muted loop id="myVideo" style="width:100%;">
+      <source src="Motorcycle - 57844.mp4" type="video/mp4">
+    </video>
+  </div>
+
+  <div class="container col-9">
+    <div class="mt-5 mb-2" style="border: 2px solid rgb(0, 0, 0); background-color: rgb(0, 0, 0); color: white; width: 100%;"><h4 class="text-center">Popular Destinations</h4></div>
+  </div>
+  <div class="container">
+    <div class="row w-100 m-0">
+      <div class="col-lg-6">
+        <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <div class="card">
+                <img
+                  src="https://assets.traveltriangle.com/blog/wp-content/uploads/2020/01/Cover-for-Hill-Stations-Near-Munnar_15th-jan.jpg"
+                  class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Chikkamagaluru</h5>
+                  <p class="card-text">Chikmagalur is a hill station in Karnataka, a state in southwest India. To the
+                    north is Baba Budangiri, a mountain range in the Western Ghats, with 3 large caves said to be holy.
+                    Trails through forests and grasslands lead up to Mullayanagiri Peak. The cascading Hebbe Falls lie
+                    in an area of coffee plantations. The forested Bhadra Wildlife Sanctuary, northwest of Chikmagalur,
+                    is home to elephants, tigers and leopards.</p>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="card">
+                <img
+                  src="https://images.hindustantimes.com/img/2021/11/14/1600x900/kerala_idukki_dam_opened_heavy_rain_imd_bulletin_1636894574034_1636894574162.jpg"
+                  class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Idukki</h5>
+                  <p class="card-text">Idukki district is a densely forested, mountainous region in the south Indian
+                    state of Kerala. In the north, Anamudi mountain towers over Eravikulam National Park, where the
+                    rare, blue Neelakurinji flower blooms every 12 years. Nearby, Munnar is a hill station known for its
+                    sprawling tea plantations and Tea Museum. Farther south is the vast, curved Idukki Dam and Periyar
+                    National Park.</p>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="card">
+                <img src="https://www.skymetweather.com/content/wp-content/uploads/2022/02/Kodaikanal.jpg"
+                  class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Kodaikanal</h5>
+                  <p class="card-text">Kodaikanal is a hill town in the southern Indian state of Tamil Nadu. It’s set in
+                    an area of granite cliffs, forested valleys, lakes, waterfalls and grassy hills. At 2,000 meters
+                    above sea level, the town centers around man-made, star-shaped Kodaikanal Lake, bordered by
+                    evergreen forest. Rowing boats can be hired, and hikers and cyclists follow the 5k Lake Road path
+                    around the shore.</p>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="card">
+                <img height="286" src="https://www.tourmyindia.com/states/sikkim/image/eastern-mystery-s2.webp"
+                  class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Darjeeling</h5>
+                  <p class="card-text">Darjeeling is a town in India's West Bengal state, in the Himalayan foothills.
+                    Once a summer resort for the British Raj elite, it remains the terminus of the narrow-gauge
+                    Darjeeling Himalayan Railway, or “Toy Train,” completed in 1881. It's famed for the distinctive
+                    black tea grown on plantations that dot its surrounding slopes. Its backdrop is Mt. Kanchenjunga,
+                    among the world’s highest peaks.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+
+
+      <div class="col-lg-6">
+        <div id="carouselExampleFade2" class="carousel slide carousel-fade" data-bs-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <div class="card">
+                <img height="286"
+                  src="https://deepamcabs.com/hpack/uploads/1577278816-bangalore-to-yelagiri-cab-services.webp"
+                  class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Yelagiri</h5>
+                  <p class="card-text">Yelagiri is a hill station in the southeast Indian state of Tamil Nadu, the town
+                    centers around man-made,. Built in 1964, the hilltop Velavan Temple is a colorful Murugan temple
+                    with views of the valley below. The Jalagamparai Waterfalls crash into a swimming hole surrounded by
+                    trails and picnic spots. Nearby is a temple dedicated to Lord Shiva. Close to artificial Punganur
+                    Lake.</p>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="card">
+                <img
+                  src="https://www.tripsavvy.com/thmb/zyqX35L3rgFRuVrbGioDKoqPezc=/2121x1414/filters:fill(auto,1)/GettyImages-930881934-5ae56fe48023b90036464e72.jpg"
+                  class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Manali</h5>
+                  <p class="card-text">Manali is a high-altitude Himalayan resort town in India’s northern Himachal
+                    Pradesh state. It has a reputation as a backpacking center and honeymoon destination. Set on the
+                    Beas River, it’s a gateway for skiing in the Solang Valley and trekking in Parvati Valley. It's also
+                    a jumping-off point for paragliding, rafting and mountaineering in the Pir Panjal mountains, home to
+                    4,000m-high Rohtang Pass.</p>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="card">
+                <img
+                  src="https://images.thrillophilia.com/image/upload/s--iaSxBBpE--/c_fill,g_center,h_450,q_auto,w_753/dpr_1.0,f_auto,fl_strip_profile/v1/images/photos/000/042/149/original/1513347426_Bike-Manali-Leh.jpg.jpg"
+                  class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Spiti Valley</h5>
+                  <p class="card-text">Spiti Valley is a cold desert mountain valley located high in the Himalayas in
+                    the north-eastern part of the northern Indian state of Himachal Pradesh. The name "Spiti" means "The
+                    middle land", i.e. Spiti valley is surrounded by high mountain ranges. Spiti valley is separated
+                    from Lahaul valley by the high Kunzum Pass, at 15,059 feet (4,590 m). the land between Tibet and
+                    India.</p>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="card">
+                <img src="https://www.holidify.com/images/bgImages/KOLLI-HILLS.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Kolli Hills</h5>
+                  <p class="card-text">Kolli Hills or Kolli Malai is a small mountain range located in central Tamil
+                    Nadu and spread over the Namakkal district and Tiruchirapalli district of India. The mountains rise
+                    to 1300 m in height and cover an area of approximately 280 km². It is situated at a distance of 43
+                    km from Namakkal and 120 km from Trichy. The mountains are covered by green vegetation in the spring
+                    and monsoon.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade2"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade2"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+
+
+    </div>
+  </div>
+  </div>
+
+  <!-- GALLERY -->
+  <div class="container col-9">
+    <div class="mt-5 mb-2" style="border: 2px solid rgb(80, 7, 7); background-color: rgb(80, 7, 7); color: white; width: 100%;"><h4 class="text-center">Gallery</h4></div>
+  </div>
+  <div class="">
+    <div class="row row-cols-2 row-cols-lg-5 g-2 g-lg-3 d-flex justify-content-center">
+      <div class="col galry">
+        <div class="border bg-light"><img width="100%"
+            src="https://www.classic-bike-india.com/wp-content/uploads/2019/11/GoaKerala2018_12.jpg" alt=""></div>
+      </div>
+      <div class="col galry">
+        <div class="border bg-light"><img width="100%"
+            src="https://d3vp2rl7047vsp.cloudfront.net/articles/article_images/000/000/001/large/Monsoon-Bike-Ride-Western-Ghats-India.png?1601582271"
+            alt=""></div>
+      </div>
+      <div class="col galry">
+        <div class="border bg-light"><img width="100%"
+            src="https://www.ecstaticindiatours.com/blog/wp-content/uploads/2017/12/bike-riding-in-ladakh.jpg" alt="">
+        </div>
+      </div>
+      <div class="col galry">
+        <div class="border bg-light"><img width="100%"
+            src="https://img.i-scmp.com/cdn-cgi/image/fit=contain,width=425,format=auto/sites/default/files/styles/768x768/public/d8/images/canvas/2021/06/18/3a6c5791-292d-4a31-af18-e33b92b41d24_c354bdc5.jpg?itok=Nmyze1-8&v=1623987143"
+            alt=""></div>
+      </div>
+      <div class="col galry">
+        <div class="border bg-light"><img width="100%"
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTTx3gY5f3NxBngdYSzseWRE_m6pWbfQsEQ7w&usqp=CAU"
+            alt=""></div>
+      </div>
+    </div>
+
+    <div class="row row-cols-2 row-cols-lg-5 g-2 g-lg-3 d-flex justify-content-center mt-1">
+      <div class="col galry">
+        <div class="border bg-light"><img width="100%"
+            src="https://www.nomadicknights.com/wp-content/uploads/Grand-Canyon-India-Thumbnail-2.jpg" alt=""></div>
+      </div>
+      <div class="col galry">
+        <div class="border bg-light"><img width="100%"
+            src="https://royalenfield.com.au/wp-content/uploads/2022/02/DSCF9644-720x480.jpg" alt=""></div>
+      </div>
+      <div class="col galry">
+        <div class="border bg-light"><img width="100%"
+            src="https://images.thrillophilia.com/image/upload/s--N9fzQYle--/c_fill,g_auto,h_600,q_auto,w_975/f_auto,fl_strip_profile/v1/images/photos/000/044/303/original/Shruthi-Naidu-1.jpg.jpg?1453315530"
+            alt=""></div>
+      </div>
+      <div class="col galry gal-hidden">
+        <div class="border bg-light"><img width="100%"
+            src="https://static.toiimg.com/photo/msid-78699712/78699712.jpg?822112" alt=""></div>
+      </div>
+      <div class="col galry gal-hidden">
+        <div class="border bg-light"><img width="100%"
+            src="https://images.firstpost.com/wp-content/uploads/2021/09/new-royal-enfield-classic-350-live-blog-launch-india-price.jpg"
+            alt=""></div>
+      </div>
+    </div>
+
+    <div class="row row-cols-2 row-cols-lg-5 g-2 g-lg-3 d-flex justify-content-center mt-1">
+      <div class="col galry gal-hidden">
+        <div class="border bg-light"><img width="100%"
+            src="https://static.toiimg.com/thumb/msid-85516017,width-1200,height-900,resizemode-4/.jpg" alt=""></div>
+      </div>
+      <div class="col galry gal-hidden">
+        <div class="border bg-light"><img width="100%"
+            src="https://images.newindianexpress.com/uploads/user/imagelibrary/2021/3/1/w1200X800/indrani_1011025.jpg"
+            alt=""></div>
+      </div>
+      <div class="col galry gal-hidden">
+        <div class="border bg-light"><img width="100%"
+            src="https://www.financialexpress.com/wp-content/uploads/2020/02/konkan-chase-1.jpg" alt=""></div>
+      </div>
+      <div class="col galry gal-hidden">
+        <div class="border bg-light"><img width="100%"
+            src="https://royalenfield.com.au/wp-content/uploads/2021/07/119A4561-1180x787.jpg" alt=""></div>
+      </div>
+      <div class="col galry gal-hidden">
+        <div class="border bg-light"><img width="100%" src="https://www.royalbikeriders.com/media/mainslides/1.jpg"
+            alt=""></div>
+      </div>
+    </div>
+
+    <div class="row row-cols-2 row-cols-lg-5 g-2 g-lg-3 d-flex justify-content-center mt-1">
+      <div class="col galry gal-hidden">
+        <div class="border bg-light"><img width="100%"
+            src="https://moxtain.s3.ap-south-1.amazonaws.com/blogs/BikeRideingDestinationInIndia/leh-ladakh-bike-trip.jpg"
+            alt=""></div>
+      </div>
+      <div class="col galry gal-hidden">
+        <div class="border bg-light"><img width="100%"
+            src="https://hindi.holidayrider.com/wp-content/uploads/2019/08/compressed-y01m.jpg" alt=""></div>
+      </div>
+      <div class="col galry gal-hidden">
+        <div class="border bg-light"><img width="100%"
+            src="https://ihplb.b-cdn.net/wp-content/uploads/2021/05/Manali-to-leh-bike-trip.jpg" alt=""></div>
+      </div>
+      <div class="col galry gal-hidden">
+        <div class="border bg-light"><img width="100%"
+            src="https://www.royalenfield.com/content/dam/royal-enfield/india/rides/marquee-rides/meteor-rides/south/gallery/new/gallery-2.jpg"
+            alt=""></div>
+      </div>
+      <div class="col galry gal-hidden">
+        <div class="border bg-light"><img width="100%"
+            src="http://natgeotraveller.in/wp-content/uploads/2016/04/Bike2.jpg" alt=""></div>
+      </div>
+    </div>
+
+    <div class="container text-center mt-lg-3 mb-lg-5">
+      <button type="button" class="btn btn-danger" id="loadMoregal">Load more</button>
+    </div>
+  </div>
+
+
+  <!-- CAROUSAL -->
+  <div class="container col-9">
+    <div class="mt-5 mb-2" style="border: 2px solid rgb(80, 7, 7); background-color: rgb(80, 7, 7); color: white; width: 100%;"><h4 class="text-center">Upcoming Expeditions</h4></div>
+  </div>
+  <div id="carouselExampleIndicators" class="carousel slide mb-5" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+        aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+        aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+        aria-label="Slide 3"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3"
+        aria-label="Slide 4"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img height="550"
+          src="https://autoxpindia.com/wp-content/uploads/2021/01/tips-to-ride-in-monsoon-RE-interceptor-m.jpg"
+          class="d-block w-100" alt="...">
+        <div class="mnsn-dis">
+          <h1 class="display-2 fw-bold mnsn-font">MONSOON RIDES</h1>
+          <p class="mnsn-para">And with monsoons almost here, it's double the cheer for every rider. The season provides
+            every kind of possible thrill.</p>
+          <button class="mnsn-btn" type="button">Know more</button>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img height="550" src="https://cdn.cheapism.com/images/iStock-1140461954.2e16d0ba.fill-1440x605.jpg"
+          class="d-block w-100" alt="...">
+        <div class="sumr-dis">
+          <h1 class="display-2 fw-bold sumr-font">SUMMER DRUMMER</h1>
+          <p class="sumr-para">Get ready to beat the heat this summer by taking wheels to road.</p>
+          <button class="sumr-btn" type="button">Know more</button>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img height="550" src="https://blog.caferides.com/wp-content/uploads/2019/07/Bike.jpg" class="d-block w-100"
+          alt="...">
+        <div class="jung-dis">
+          <h1 class="display-2 fw-bold jung-font">JUNGLE FURY</h1>
+          <p class="jung-para">Amid nature you can easily loosen up and de-stress from the many <br> demands of modern
+            life.
+            If you too have been craving some <br> time for yourself surrounded by the dense forests.
+          </p>
+          <button class="jung-btn" type="button">Know more</button>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img height="550"
+          src="http://motoringwebuploads.s3.ap-south-1.amazonaws.com/wp-content/uploads/2018/10/11224143/BP1A9795.jpg"
+          class="d-block w-100" alt="...">
+        <div class="ofrd-dis">
+          <h1 class="display-2 fw-bold ofrd-font">OFF-ROAD MANIA</h1>
+          <p class="ofrd-para">Get ready to kick some dirt, dust and adventures.</p>
+          <button class="ofrd-btn" type="button">Know more</button>
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+      data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+      data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+
+
+  <!-- FORM -->
+  <div class="container col-9">
+    <div class="mt-5 mb-2" style="border: 2px solid rgb(80, 7, 7); background-color: rgb(80, 7, 7); color: white; width: 100%;"><h4 class="text-center">Ride with us</h4></div>
+  </div>
+  <div class="container">
+    <div class="row p-4" style="background-color: rgb(88, 88, 88);">
+      <div class="col-2"></div>
+      <div class="col-md-9">
+        <form class="row g-3 needs-validation" novalidate>
+          <div class="col-md-4">
+            <!-- <label for="validationCustom01" class="form-label">First name</label> -->
+            <input type="text" class="form-control" id="validationCustom01" placeholder="First Name" required>
+            <div class="valid-feedback">
+              Looks good!
+            </div>
+          </div>
+          <div class="col-md-4">
+            <!-- <label for="validationCustom02" class="form-label">Last name</label> -->
+            <input type="text" class="form-control" id="validationCustom02" placeholder="Last Name" required>
+            <div class="valid-feedback">
+              Looks good!
+            </div>
+          </div>
+          <div class="col-md-4">
+            <!-- <label for="validationCustomUsername" class="form-label">Mobile</label> -->
+            <div class="input-group has-validation">
+              <span class="input-group-text" id="inputGroupPrepend">+91</span>
+              <input type="text" class="form-control" id="validationCustomUsername" aria-describedby="inputGroupPrepend"
+                placeholder="Mobile" required>
+              <div class="invalid-feedback">
+                Please provide your Mobile Number.
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <!-- <label for="validationCustom03" class="form-label">City</label> -->
+            <input type="text" class="form-control" id="validationCustom03" placeholder="Email" required>
+            <div class="invalid-feedback">
+              Please provide a valid email.
+            </div>
+          </div>
+          <div class="col-md-3">
+            <!-- <label for="validationCustom04" class="form-label">State</label> -->
+            <select class="form-select" id="validationCustom04" required>
+              <option selected disabled value="">Where you from</option>
+              <option>Karnataka</option>
+              <option>Kerala</option>
+              <option>TamilNadu</option>
+              <option>Arunachal pradesh</option>
+              <option>Andhra pradesh</option>
+              <option>Chhattisgarh</option>
+              <option>Goa</option>
+              <option>Odisha</option>
+              <option>Punjab</option>
+              <option>Rajasthan</option>
+              <option>West Bengal</option>
+              <option></option>
+            </select>
+            <div class="invalid-feedback">
+              Please select a valid state.
+            </div>
+          </div>
+          <div class="col-md-3">
+            <!-- <label for="validationCustom05" class="form-label">Zip</label> -->
+            <input type="text" class="form-control" id="validationCustom05" placeholder="Zip code" required>
+            <div class="invalid-feedback">
+              Please provide a valid zip.
+            </div>
+          </div>
+          <div class="col-md-4">
+            <!-- <label for="validationCustom05" class="form-label">Zip</label> -->
+            <input type="text" class="form-control" id="validationCustom05" placeholder="From Date" required>
+            <div class="invalid-feedback">
+              Please provide a valid date.
+            </div>
+          </div>
+          <div class="col-md-4">
+            <!-- <label for="validationCustom05" class="form-label">Zip</label> -->
+            <input type="text" class="form-control" id="validationCustom05" placeholder="To Date" required>
+            <div class="invalid-feedback">
+              Please provide a valid date.
+            </div>
+          </div>
+          <div class="col-12">
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+              <label class="form-check-label" style="color: white;" for="invalidCheck">
+                Agree to terms and conditions
+              </label>
+              <div class="invalid-feedback">
+                You must agree before submitting.
+              </div>
+            </div>
+          </div>
+          <div class="col-12">
+            <button class="btn btn-danger" type="submit">Let's go!</button>
+          </div>
+        </form>
+      </div>
+      <div class="col-2"></div>
+    </div>
+  </div>
+
+
+
+  <div class=" bg-light">
+    <footer class="foot">
+      <div class="row justify-content-sm-end">
+        <div class="col-md-5 py-lg-5 pb-5 ">
+          <form class="p-3">
+            <h5>Subscribe to our newsletter</h5>
+            <p>Monthly digest of whats new and exciting from us.</p>
+            <div class="d-flex w-100 gap-2">
+              <label for="newsletter1" class="visually-hidden">Email address</label>
+              <input id="newsletter1" type="text" class="form-control" placeholder="Email address">
+              <button class="btn btn-primary" type="button">Subscribe</button>
+            </div>
+          </form>
+        </div>
+      </div>
+
+      <div class="row px-5">
+        <div class="col-4">
+          <h5>Section</h5>
+          <ul class="nav flex-column">
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Home</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Features</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Pricing</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">FAQs</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">About</a></li>
+          </ul>
+        </div>
+
+        <div class="col-4">
+          <h5>Section</h5>
+          <ul class="nav flex-column">
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Home</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Features</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Pricing</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">FAQs</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">About</a></li>
+          </ul>
+        </div>
+
+        <div class="col-4">
+          <h5>Section</h5>
+          <ul class="nav flex-column">
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Home</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Features</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Pricing</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">FAQs</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">About</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="d-flex justify-content-between py-4 px-4 my-4 border-top">
+        <p>&copy; 2022 TRIPPY, Inc. All rights reserved.</p>
+        <ul class="list-unstyled d-flex">
+          <li class="ms-3"><a class="link-dark" href="#"><svg class="bi" width="24" height="24">
+                <use xlink:href="#twitter" />
+              </svg></a></li>
+          <li class="ms-3"><a class="link-dark" href="#"><svg class="bi" width="24" height="24">
+                <use xlink:href="#instagram" />
+              </svg></a></li>
+          <li class="ms-3"><a class="link-dark" href="#"><svg class="bi" width="24" height="24">
+                <use xlink:href="#facebook" />
+              </svg></a></li>
+        </ul>
+      </div>
+    </footer>
+  </div>
+
+
+  <link rel="stylesheet"
+    href="/etc.clientlibs/re-platform/clientlibs/re-platform/components/common/socialLinks.min.6f8926c5b9a54de8777fc017116d8096.css"
+    type="text/css">
+  <script src="/etc.clientlibs/re-platform/clientlibs/re-platform/components/common/socialLinks.min.js"></script>
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+  <script type="text/javascript" src="tripper.js"></script>
+</body>
+
+</html>

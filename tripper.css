@@ -1,0 +1,202 @@
+/* .btn{
+     margin-left: 13rem;
+} */
+
+@media (max-width: 600px) {
+     .d-block {
+       height: 360px;
+     }
+     .vid{
+       height: auto !important; 
+     }
+
+     .mnsn-dis {
+      bottom: 3rem !important;
+      left: 1rem !important;
+      padding: 30px;
+     }
+      .sumr-dis{
+      bottom: 9rem !important;
+      left: 0rem !important;
+      padding: 30px;
+      }
+      .sumr-dis>h1
+      {
+        font-size: 2rem !important;
+      }
+      .sumr-para{
+        top: 0.1px !important;
+        right: 1.3rem;
+        font-size: 12.6px;
+      }
+
+      .jung-dis{
+        top: 1rem;
+        left: .5rem !important;
+      }
+
+      .jung-para{
+        font-size: 12px !important;
+      }
+
+      .ofrd-dis{
+        left: 1rem !important;
+        top: 2rem !important;
+      }
+   }
+
+   .card img{
+     height: 300px;
+   }
+
+   .galry{
+     width: 32% !important;
+   }
+
+.box-hidden, .gal-hidden{
+  display: none;
+}
+
+.mnsn-dis{
+  /* border: 2px solid red; */
+  position: absolute;
+  bottom: 18rem;
+  left: 44rem;
+}
+
+.mnsn-font{
+  text-shadow: 2px 2px #ffffff;
+  font-family: 'Righteous', cursive;
+}
+
+.mnsn-btn{
+  padding: .3rem 2rem .3rem 2rem;
+  border: 1.5px solid black;
+  background-color: transparent;
+  margin-left: 1rem;
+}
+
+.mnsn-para{
+  position: relative;
+  top: -1rem;
+}
+
+
+
+/* slow-hover-effect---------- */
+/* .mnsn-btn:hover{
+  animation: zoom 0.5s;
+}
+
+@keyframes zoom {
+  from{
+    transform: scale(1);
+  }
+  to{
+    transform: scale(1.07);
+  }
+} ------------*/
+
+.mnsn-btn:hover{
+  transform: scale(1.07);
+}
+
+.sumr-dis{
+  /* border: 2px solid red; */
+  position: absolute;
+  bottom: 20rem;
+  left: 40rem;
+  width: 45rem;
+}
+
+.sumr-font{
+  color: #ffb300;
+  font-family: 'Righteous', cursive;
+  text-shadow: 2px 2px #000000;
+}
+
+.sumr-btn{
+  color: #000000;
+  padding: .3rem 2rem .3rem 2rem;
+  border: 1.5px solid #000000;
+  background-color: transparent;
+  margin-left: 1rem;
+}
+
+.sumr-para{
+  color: #000000;
+  position: relative;
+  top: -1rem;
+}
+
+.sumr-btn:hover{
+  transform: scale(1.07);
+}
+
+.jung-dis{
+  /* border: 2px solid red; */
+  position: absolute;
+  bottom: 20rem;
+  left: 4rem;
+  width: 45rem;
+}
+
+.jung-font{
+  color: #ffffff;
+  font-family: 'Righteous', cursive;
+  text-shadow: 2px 2px #000000;
+}
+
+.jung-btn{
+  color: #ffffff;
+  padding: .3rem 2rem .3rem 2rem;
+  border: 1.5px solid #ffffff;
+  background-color: transparent;
+  margin-left: 8rem;
+}
+
+.jung-para{
+  color: #ffffff;
+  position: relative;
+  top: -1rem;
+}
+
+.jung-btn:hover{
+  transform: scale(1.07);
+}
+
+.ofrd-dis{
+  /* border: 2px solid red; */
+  position: absolute;
+  bottom: 22rem;
+  left: 42rem;
+  width: 45rem;
+}
+
+.ofrd-font{
+  color: #ffffff;
+  font-family: 'Righteous', cursive;
+  text-shadow: 2px 2px #000000;
+}
+
+.ofrd-btn{
+  color: #ffffff;
+  padding: .3rem 2rem .3rem 2rem;
+  border: 1.5px solid #ffffff;
+  background-color: transparent;
+  margin-left: 1rem;
+}
+
+.ofrd-para{
+  color: #ffffff;
+  position: relative;
+  top: -1rem;
+}
+
+.ofrd-btn:hover{
+  transform: scale(1.07);
+}
+
+.foot{
+  margin-top: 15rem;
+}
